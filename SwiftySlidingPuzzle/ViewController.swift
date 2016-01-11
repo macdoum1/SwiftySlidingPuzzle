@@ -9,17 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    lazy var board = SSPBoard()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        board.setupWithSize(3)
+        board.shuffleBoard()
+        if(!board.isSolvable()) {
+            print(board.printBoard())
+            print("Inversions" + String(board.sumInversions()) + "\n")
+            print("---")
+        }
+        board.printBoard()
+        board.solvePuzzle()
+        board.printBoard()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
+
+
 

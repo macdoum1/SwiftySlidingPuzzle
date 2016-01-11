@@ -14,6 +14,8 @@
 		D83ADE2E1C230A26000200C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83ADE2C1C230A26000200C7 /* LaunchScreen.storyboard */; };
 		D83ADE391C230A26000200C7 /* SwiftySlidingPuzzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83ADE381C230A26000200C7 /* SwiftySlidingPuzzleTests.swift */; };
 		D83ADE441C230A26000200C7 /* SwiftySlidingPuzzleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83ADE431C230A26000200C7 /* SwiftySlidingPuzzleUITests.swift */; };
+		D84960A51C3EB57100F119AE /* SSPBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84960A41C3EB57100F119AE /* SSPBoard.swift */; };
+		D84960A91C3EC31600F119AE /* SSPFisherYates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84960A81C3EC31600F119AE /* SSPFisherYates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D83ADE3F1C230A26000200C7 /* SwiftySlidingPuzzleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftySlidingPuzzleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83ADE431C230A26000200C7 /* SwiftySlidingPuzzleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySlidingPuzzleUITests.swift; sourceTree = "<group>"; };
 		D83ADE451C230A26000200C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D84960A41C3EB57100F119AE /* SSPBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSPBoard.swift; sourceTree = "<group>"; };
+		D84960A81C3EC31600F119AE /* SSPFisherYates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSPFisherYates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				D83ADE231C230A26000200C7 /* AppDelegate.swift */,
 				D83ADE251C230A26000200C7 /* ViewController.swift */,
+				D84960A41C3EB57100F119AE /* SSPBoard.swift */,
+				D84960A81C3EC31600F119AE /* SSPFisherYates.swift */,
 				D83ADE271C230A26000200C7 /* Main.storyboard */,
 				D83ADE2A1C230A26000200C7 /* Assets.xcassets */,
 				D83ADE2C1C230A26000200C7 /* LaunchScreen.storyboard */,
@@ -256,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D84960A91C3EC31600F119AE /* SSPFisherYates.swift in Sources */,
+				D84960A51C3EB57100F119AE /* SSPBoard.swift in Sources */,
 				D83ADE261C230A26000200C7 /* ViewController.swift in Sources */,
 				D83ADE241C230A26000200C7 /* AppDelegate.swift in Sources */,
 			);
@@ -484,6 +492,7 @@
 				D83ADE4A1C230A26000200C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D83ADE4B1C230A26000200C7 /* Build configuration list for PBXNativeTarget "SwiftySlidingPuzzleTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +501,7 @@
 				D83ADE4D1C230A26000200C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D83ADE4E1C230A26000200C7 /* Build configuration list for PBXNativeTarget "SwiftySlidingPuzzleUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +510,7 @@
 				D83ADE501C230A26000200C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
